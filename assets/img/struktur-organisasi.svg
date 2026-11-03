@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360"><rect width="900" height="360" fill="#f3f6fa"/>
+<g font-family="Segoe UI,Arial" font-size="16" text-anchor="middle" fill="#fff"><rect x="350" y="20" width="200" height="50" fill="#ED1C24"/><text x="450" y="52">Direktur</text>
+<g fill="#0B5DA8"><rect x="40" y="160" width="180" height="50"/><rect x="260" y="160" width="180" height="50"/><rect x="480" y="160" width="180" height="50"/><rect x="700" y="160" width="160" height="50"/></g>
+<text x="130" y="192">Bagian 1</text><text x="350" y="192">Bagian 2</text><text x="570" y="192">Bagian 3</text><text x="780" y="192">Bagian 4</text></g>
+<g stroke="#556272" stroke-width="2" fill="none"><path d="M450 70V115M130 115H780M130 115V160M350 115V160M570 115V160M780 115V160"/></g>
+<text x="450" y="300" text-anchor="middle" font-family="Segoe UI,Arial" fill="#556272" font-size="15">Ganti dengan bagan organisasi resmi</text></svg>
