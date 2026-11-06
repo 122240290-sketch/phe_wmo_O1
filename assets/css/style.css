@@ -27,7 +27,7 @@ h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:1rem;color:var(--blue-d)}
 h3{font-size:1.2rem;margin-bottom:.4rem}
 p+p{margin-top:1rem}
 .lead{font-size:1.2rem;color:var(--muted)}
-.sub-lead{color:var(--muted);max-width:62ch;margin-bottom:1.8rem}
+.sub-lead{color:var(--muted);max-width:none;margin-bottom:1.8rem;text-align:justify;text-justify:inter-word;hyphens:auto}
 .note{margin-top:1.5rem;font-size:.9rem;color:var(--muted);border-left:3px solid var(--line);padding-left:.8rem}
 .mt{margin-top:2.2rem}
 
