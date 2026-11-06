@@ -1,4 +1,3 @@
-
 (function(){
   var btn=document.querySelector('.menu-btn'), nav=document.querySelector('.main-nav');
   if(btn&&nav){btn.addEventListener('click',function(){
@@ -39,7 +38,7 @@
       if(!heading) return;
       if(!section.id){
         var slug=heading.textContent.trim().toLowerCase()
-          .replace(/[^a-z0-9\\s-]/g,'').replace(/\\s+/g,'-');
+          .replace(/[^a-z0-9\s-]/g,'').replace(/\s+/g,'-');
         section.id=slug||('bagian-'+(index+1));
       }
       targets.push({id:section.id,label:heading.textContent.trim()});
@@ -56,5 +55,36 @@
       });
       hero.insertAdjacentElement('afterend',quick);
     }
+  }
+
+  // Kirim form kontak lewat AJAX (FormSubmit)
+  var form=document.getElementById('form');
+  var statusEl=document.getElementById('form-status');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var submitBtn=form.querySelector('button[type="submit"]');
+      if(submitBtn) submitBtn.disabled=true;
+      if(statusEl) statusEl.textContent='Mengirim...';
+
+      fetch(form.action,{
+        method:'POST',
+        headers:{'Accept':'application/json'},
+        body:new FormData(form)
+      })
+      .then(function(res){return res.json().then(function(data){return {ok:res.ok,data:data};});})
+      .then(function(r){
+        if(r.ok && (r.data.success===true || r.data.success==='true')){
+          form.reset();
+          if(statusEl) statusEl.textContent='Pesan berhasil dikirim. Terima kasih!';
+        } else {
+          if(statusEl) statusEl.textContent='Gagal mengirim: '+(r.data.message||'coba lagi.');
+        }
+      })
+      .catch(function(){
+        if(statusEl) statusEl.textContent='Terjadi kesalahan jaringan. Coba lagi.';
+      })
+      .then(function(){ if(submitBtn) submitBtn.disabled=false; });
+    });
   }
 })();
