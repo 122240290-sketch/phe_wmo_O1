@@ -18,7 +18,7 @@
     </a>
     <button class="menu-btn" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="main-nav" aria-label="Menu utama">
-      <ul><li class=""><a href="../index.html">Beranda</a></li><li class="has-sub "><a href="../pages/tentang-kami.html">Tentang Kami</a><button class="sub-toggle" aria-label="Buka submenu Tentang Kami">+</button><ul class="sub"><li><a href="../pages/tentang-kami.html">Profil, Visi & Misi</a></li><li><a href="../pages/tentang-kami.html#sejarah-perusahaan">Sejarah Perusahaan</a></li><li><a href="../pages/manajemen.html">Manajemen</a></li><li><a href="../pages/pemegang-saham.html">Pemegang Saham & Mitra</a></li></ul></li><li class="has-sub "><a href="../pages/operasi.html#wilayah-kerja">Operasi</a><button class="sub-toggle" aria-label="Buka submenu Operasi">+</button><ul class="sub"><li><a href="../pages/operasi.html#wilayah-kerja">Wilayah Kerja & Fasilitas</a></li><li><a href="../pages/operasi.html#produksi">Produksi</a></li></ul></li><li class=""><a href="../pages/inovasi.html">Inovasi</a></li><li class="has-sub "><a href="../pages/keberlanjutan.html">Keberlanjutan</a><button class="sub-toggle" aria-label="Buka submenu Keberlanjutan">+</button><ul class="sub"><li><a href="../pages/keberlanjutan.html">Lingkungan & Keanekaragaman Hayati</a></li><li><a href="../pages/csr.html">Tanggung Jawab Sosial (CSR)</a></li></ul></li><li class=""><a href="../pages/penghargaan.html">Penghargaan</a></li><li class=""><a href="../pages/karier.html">Karier</a></li></ul>
+      <ul><li class=""><a href="../index.html">Beranda</a></li><li class="has-sub "><a href="../pages/tentang-kami.html">Tentang Kami</a><button class="sub-toggle" aria-label="Buka submenu Tentang Kami">+</button><ul class="sub"><li><a href="../pages/tentang-kami.html">Profil, Visi & Misi</a></li><li><a href="../pages/tentang-kami.html#sejarah-perusahaan">Sejarah Perusahaan</a></li><li><a href="../pages/manajemen.html">Manajemen</a></li><li><a href="../pages/pemegang-saham.html">Pemegang Saham & Mitra</a></li></ul></li><li class="has-sub "><a href="../pages/operasi.html#wilayah-kerja">Operasi</a><button class="sub-toggle" aria-label="Buka submenu Operasi">+</button><ul class="sub"><li><a href="../pages/operasi.html#wilayah-kerja">Wilayah Kerja & Fasilitas</a></li><li><a href="../pages/operasi.html#produksi">Produksi</a></li></ul></li><li class=""><a href="../pages/inovasi.html">Inovasi</a></li><li class="has-sub "><a href="../pages/keberlanjutan.html">Keberlanjutan</a><button class="sub-toggle" aria-label="Buka submenu Keberlanjutan">+</button><ul class="sub"><li><a href="../pages/keberlanjutan.html">Lingkungan & Keanekaragaman Hayati</a></li></ul></li><li class=""><a href="../pages/penghargaan.html">Penghargaan</a></li><li class=""><a href="../pages/karier.html">Karier</a></li></ul>
       <a class="btn btn-red nav-cta" href="../pages/kontak.html">Hubungi Kami</a>
     </nav>
   </div>
@@ -43,7 +43,10 @@
     <h3>Saluran resmi</h3>
     <p>WhatsApp: <a href="https://wa.me/6289654341632?text=Halo%20PHE%20WMO%2C%20saya%20ingin%20bertanya." target="_blank" rel="noopener">0896-5434-1632</a><br>Call Center Pertamina: 135</p>
   </div>
-  <form id="form" class="form" action="../forms/contact.php" method="post">
+  <form id="form" class="form" action="https://formsubmit.co/ajax/122240290@student.upnyk.ac.id" method="POST">
+    <input type="hidden" name="_subject" value="Pesan dari Website Profil PHE WMO">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
     <h2>Kirim pesan</h2>
     <label>Nama lengkap<input type="text" name="nama" required></label>
     <label>Email<input type="email" name="email" required></label>
@@ -51,8 +54,10 @@
       <select name="perihal"><option>Pertanyaan umum</option><option>Kerja sama</option><option>Karier</option><option>Media</option></select>
     </label>
     <label>Pesan<textarea name="pesan" rows="5" required></textarea></label>
-    <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
     <button class="btn btn-red" type="submit">Kirim pesan</button>
+    <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+    <p class="note">Pesan dikirim ke 122240290@student.upnyk.ac.id melalui layanan FormSubmit. Pengiriman pertama memerlukan aktivasi alamat email penerima melalui email konfirmasi dari FormSubmit.</p>
   </form>
 </div></section>
 <section class="map"><iframe title="Peta kantor PHE WMO" loading="lazy" src="https://www.google.com/maps?q=PHE+Tower+Jakarta&output=embed"></iframe></section>
@@ -68,11 +73,9 @@
       <h4>Jelajahi</h4>
       <ul>
         <li><a href="../pages/tentang-kami.html">Tentang Kami</a></li>
-        <li><a href="../pages/manajemen.html">Manajemen</a></li>
-        <li><a href="../pages/operasi.html#wilayah-kerja">Wilayah Kerja</a></li>
+        <li><a href="../pages/operasi.html">Operasi</a></li>
         <li><a href="../pages/inovasi.html">Inovasi</a></li>
         <li><a href="../pages/keberlanjutan.html">Keberlanjutan</a></li>
-        <li><a href="../pages/csr.html">CSR</a></li>
         <li><a href="../pages/penghargaan.html">Penghargaan</a></li>
         <li><a href="../pages/karier.html">Karier</a></li>
       </ul>
